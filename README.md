@@ -11,7 +11,7 @@
     1️⃣ Product Quantity increment and decrement
     2️⃣ Logo Add alert
     3️⃣ React Router
-    4️⃣ Nested Comported
+    4️⃣ Nested Components
     5️⃣ Lazy Loader
 ### `Which has been used in the website`
     👉   "@material-ui/core": "^4.12.1",

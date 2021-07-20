@@ -5,19 +5,21 @@
 
 👀 See the live site [Open](https://buy-clothes-shop.netlify.app/)
 
+![buy-clothes](https://user-images.githubusercontent.com/75581445/126300281-1a68fc92-ef45-43a8-9c32-22f9263c8f09.JPG)
+
 ### `Which Feature add in the website`
-1️⃣ Product Quantity increment and decrement
-2️⃣ Logo Add alert
-3️⃣ React Router
-4️⃣ Nested Comported
-5️⃣ Lazy Loader
+    1️⃣ Product Quantity increment and decrement
+    2️⃣ Logo Add alert
+    3️⃣ React Router
+    4️⃣ Nested Comported
+    5️⃣ Lazy Loader
 ### `Which has been used in the website`
- 👉   "@material-ui/core": "^4.12.1",
- 👉   "@material-ui/icons": "^4.11.2",
- 👉   "react-reveal": "^1.2.2",
- 👉   "bootstrap": "^5.0.0-alpha1",
- 👉   "react": "^17.0.2",
- 👉   "react-dom": "^17.0.2",
+    👉   "@material-ui/core": "^4.12.1",
+    👉   "@material-ui/icons": "^4.11.2",
+    👉   "react-reveal": "^1.2.2",
+    👉   "bootstrap": "^5.0.0-alpha1",
+    👉   "react": "^17.0.2",
+    👉   "react-dom": "^17.0.2",
 
 
 

@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body{
+    background-color: #f0f1f1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+.lazy__loader img{
+    position: absolute;
+    content: "";
+    left: 50%;
+    right: 50%;
+    top: 75%;
+    bottom: 50%;
+}
+.shadow_hover{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.shadow_hover:hover {
+    box-shadow: 0px 0px 15px 6px #cccaca6e;
+}
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+.form-check-input:radio {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+.method_card{
+ cursor: pointer;
+}
+.method_card:hover{
+ border: 1px solid #ffc107;
+}
+.method_card:hover .method__icon svg{
+ color: #ffc107;
+}
+.artwork__icon{
+    border: 1px dotted #000;
+    padding: 1.2rem 1rem;
+    border-radius: 50%;
+}
+.method_card:hover .artwork__icon{
+    border: 1px dotted #ffc107;
+    color: #ffc107;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Custom File-Upload Button */
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*Custom Scroll Bar */
+select {
+    padding: 3px 12px;
+    outline: none;
+    width: 250px;
+    margin-bottom: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  select.widthHeight::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  select.style::-webkit-scrollbar-track {
+    border: rgb(180, 180, 180);
+    background-color: #ddc120;
   }
-}
+  
+  select.style::-webkit-scrollbar-thumb {
+    background-color: #ddc120;
+    border: 1px solid rgb(193, 193, 193);
+  }
+  

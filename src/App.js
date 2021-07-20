@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense} from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import LogoPositionSec from './components/LogoPosition/LogoPositionSec';
+import OthersChoose from './components/OthersChoose/OthersChoose';
+import ShipmentPage from './components/Shipment/ShipmentPage';
+import LazyLoader from './components/LazyLoader/LazyLoader';
+const HomeSection = lazy(()=> import( './components/HomeSection/HomeSection'));
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+      <Router>
+       <Switch>
+         <Route exact path="/" >
+          <Suspense fallback={ <> <LazyLoader/> </>}>
+            <HomeSection/> 
+          </Suspense> 
+         </Route>
+         <Route path="/choosePosition" >
+           <LogoPositionSec/> 
+         </Route>
+         <Route path="/othersChoose" >
+           <OthersChoose/> 
+         </Route>
+         <Route path="/shipment" >
+           <ShipmentPage/> 
+         </Route>
+       </Switch>
+      </Router>
+           
+        
+    );
+};
 
 export default App;
